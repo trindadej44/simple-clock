@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <locale.h>
 #include <time.h>
-int main(){ //feito por Jader Trindade
+int main(){ 
 setlocale(LC_ALL, "Portuguese");
 
 	int sec, min, hour, i, opcao, opcaoRelogio, opcaoCronometro;
@@ -11,7 +11,7 @@ setlocale(LC_ALL, "Portuguese");
 		opcao = 0;
 
 	do{
-	     printf("\n\n\t\tDigite qual função você deseja abrir:\n\n\n\n@@\tNº 1  -- Abre o menu Cronômetro\t        @@\n\n@@\tNº 2  -- Limpa o Cronômetro\t        @@\n\n@@\tNº 3  -- Abre o menu Temporizador\t@@\n\n@@\tNº 4  -- Horário do seu sistema\t\t@@");
+	     printf("\n\n\t\tDigite qual funÃ§Ã£o vocÃª deseja abrir:\n\n\n\n@@\tNÂº 1  -- Abre o menu CronÃ´metro\t        @@\n\n@@\tNÂº 2  -- Limpa o CronÃ´metro\t        @@\n\n@@\tNÂº 3  -- Abre o menu Temporizador\t@@\n\n@@\tNÂº 4  -- HorÃ¡rio do seu sistema\t\t@@");
 	     scanf("%d", &opcao);
 	     if(opcao==1){
 	    system("cls");
@@ -20,8 +20,8 @@ setlocale(LC_ALL, "Portuguese");
 		sec++;
 		if(sec==60)
 			min++;
-			printf("Cronômetro / Relógio em C\n");
-			printf("\n\n\n\n\n\t\t\t\t\t\t %dhr:%dmin:%dsec \n\n\n\n\n\t\t\t\t    ###PRESSIONE QUALQUER TECLA PARA SAIR###\n\n\n\n\n\t\t\t\tParabéns! Você sobreviveu %d minutos nesse programa", hour, min, sec, min);
+			printf("CronÃ´metro / RelÃ³gio em C\n");
+			printf("\n\n\n\n\n\t\t\t\t\t\t %dhr:%dmin:%dsec \n\n\n\n\n\t\t\t\t    ###PRESSIONE QUALQUER TECLA PARA SAIR###\n\n\n\n\n\t\t\t\tParabÃ©ns! VocÃª sobreviveu %d minutos nesse programa", hour, min, sec, min);
 			Sleep(1000); // alterar a velocidade em que o tempo passa
 			system("cls");
 		if(sec>59)
@@ -41,7 +41,7 @@ setlocale(LC_ALL, "Portuguese");
 	if(opcao==2)
 	{
 		system("cls");
-		printf("\n\tHISTÓRICO LIMPO");
+		printf("\n\tHISTÃ“RICO LIMPO");
 		sec=0;
 		min=0;
 		hour=0;
@@ -50,7 +50,7 @@ setlocale(LC_ALL, "Portuguese");
 	{	
 		system("cls");
 		printf("\n\n\t\t@ @ @ TEMPORIZADOR @ @ @\n\n");
-		printf("\n\nOPÇÃO #1: ESCOLHA AS HORAS, MINUTOS E SEGUNDOS EXATOS\n\nOPÇÃO #2: ESCOLHA OS SEGUNDOS. OS MINUTOS E HORAS IRÃO SE ADAPTAR");
+		printf("\n\nOPÃ‡ÃƒO #1: ESCOLHA AS HORAS, MINUTOS E SEGUNDOS EXATOS\n\nOPÃ‡ÃƒO #2: ESCOLHA OS SEGUNDOS. OS MINUTOS E HORAS IRÃƒO SE ADAPTAR");
 		scanf("%d", &opcaoCronometro);
 		if(opcaoCronometro==1)
 		{
@@ -82,7 +82,7 @@ setlocale(LC_ALL, "Portuguese");
 				break;
 			
 			printf("\n\n###CONTAGEM REGRESSIVA###\n\n");
-			printf("\n\n\n\n\n\t\t\t\t\t\t %dhr:%dmin:%dsec \n\n\n\n\n\n\t\t\t\t\t@@@@ APERTE ESPAÇO PARA SAIR @@@@", hour, min, sec, min);
+			printf("\n\n\n\n\n\t\t\t\t\t\t %dhr:%dmin:%dsec \n\n\n\n\n\n\t\t\t\t\t@@@@ APERTE ESPAÃ‡O PARA SAIR @@@@", hour, min, sec, min);
 			Sleep(1000); // alterar a velocidade em que o tempo passa
 			system("cls");
 			
@@ -125,7 +125,7 @@ setlocale(LC_ALL, "Portuguese");
 			
 		    system("cls");
 			printf("\n\n###CONTAGEM REGRESSIVA###\n\n");
-			printf("\n\n\n\n\n\t\t\t\t\t\t %dhr:%dmin:%dsec \n\n\n\n\n\n\t\t\t\t\t@@@@ APERTE ESPAÇO PARA SAIR @@@@", hour, min, sec, min);
+			printf("\n\n\n\n\n\t\t\t\t\t\t %dhr:%dmin:%dsec \n\n\n\n\n\n\t\t\t\t\t@@@@ APERTE ESPAÃ‡O PARA SAIR @@@@", hour, min, sec, min);
 			Sleep(1000); // alterar a velocidade em que o tempo passa
 			
 			
